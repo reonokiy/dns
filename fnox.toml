@@ -1,0 +1,7 @@
+[providers.op]
+type = "1password"
+vault = "dev"
+
+[secrets]
+CLOUDFLARE_ACCOUNT_ID = { provider = "op", value = "cloudflare/ACCOUND_ID" }
+CLOUDFLARE_API_TOKEN = { provider = "op", value = "cloudflare/DNS_API_KEY" }

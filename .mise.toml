@@ -1,0 +1,36 @@
+[tools]
+"github:DNSControl/dnscontrol" = "4.42.0"
+
+[tasks.check]
+description = "Check DNSControl config syntax"
+run = "dnscontrol check"
+
+[tasks.preview]
+description = "Preview Cloudflare DNS changes using fnox secrets"
+run = """
+fnox exec -- sh -c '
+  test -n "$CLOUDFLARE_ACCOUNT_ID"
+  test -n "$CLOUDFLARE_API_TOKEN"
+  dnscontrol preview --creds creds.env.json
+'
+"""
+
+[tasks.push]
+description = "Apply Cloudflare DNS changes using fnox secrets"
+run = """
+fnox exec -- sh -c '
+  test -n "$CLOUDFLARE_ACCOUNT_ID"
+  test -n "$CLOUDFLARE_API_TOKEN"
+  dnscontrol push --creds creds.env.json
+'
+"""
+
+[tasks.get-zones]
+description = "Export the current Cloudflare nokiy.net zone using fnox secrets"
+run = """
+fnox exec -- sh -c '
+  test -n "$CLOUDFLARE_ACCOUNT_ID"
+  test -n "$CLOUDFLARE_API_TOKEN"
+  dnscontrol get-zones --creds creds.env.json --format=js cloudflare nokiy.net
+'
+"""
