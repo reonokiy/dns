@@ -32,7 +32,7 @@ jobs:
         run: mise run check
 
   preview:
-    name: Preview Cloudflare changes
+    name: Cloudflare changes
     runs-on: ubuntu-latest
     needs: check
     if: github.event_name != 'pull_request'
