@@ -8,7 +8,7 @@ var NOKIY_APP_RECORDS = [
   CNAME("file.self", "self-nokiy-net.fly.storage.tigris.dev."),
   CNAME("file.social", "social-nokiy-net.fly.storage.tigris.dev."),
   CNAME("gateway.nexal", "nexal.fly.dev."),
-  CNAME("hs", "hs-nokiy-net.fly.dev."),
+  CNAME("hs", "2pjlmx5.hs-nokiy-net.fly.dev."),
   CNAME("obsidian", "obsidian-nokiy-net.fly.storage.tigris.dev."),
   CNAME("paper", "paper-nokiy-net.pages.dev.", CF_PROXY_ON),
   CNAME("public", "public-nokiy-net.fly.storage.tigris.dev."),
