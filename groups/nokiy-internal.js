@@ -1,4 +1,6 @@
 var NOKIY_INTERNAL_RECORDS = [
+  // DNS-only Headscale entrypoint; clients still need tailnet membership and ACL.
+  A("api.internal", "100.85.64.172", TTL(300)),
   A("*.aiio.i", "100.113.0.39", TTL(300)),
   A("aiio.i", "100.113.0.39", TTL(300)),
   A("*.glowworm.i", "100.75.253.2", TTL(300)),
