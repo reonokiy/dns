@@ -1,5 +1,4 @@
 var NOKIY_APP_RECORDS = [
-  CNAME("auth.synapse", "mine.nokiy.net."),
   CNAME("backup", "backup-nokiy-net.fly.storage.tigris.dev."),
   CNAME("demo.cvpage", "reonokiy.github.io."),
   CNAME("elk", "949e3763b88b2f0b.vercel-dns-017.com."),
@@ -14,7 +13,6 @@ var NOKIY_APP_RECORDS = [
   CNAME("public", "public-nokiy-net.fly.storage.tigris.dev."),
   CNAME("simple-backup", "reonokiy.github.io."),
   CNAME("storage.base", "storage-base-nokiy-net.fly.storage.tigris.dev."),
-  CNAME("synapse", "mine.nokiy.net."),
   CNAME("telemetry-storage", "telemetry-storage-nokiy-net.fly.storage.tigris.dev."),
   CNAME("test", "noki.nokiy.net."),
 ];

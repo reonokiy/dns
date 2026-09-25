@@ -6,7 +6,9 @@ var NOKIY_EXTERNAL_DNS_IGNORES = [
   IGNORE_NAME("ai-gateway"),
   IGNORE_NAME("api.internal"),
   IGNORE_NAME("arpk"),
+  IGNORE_NAME("auth.synapse"),
   IGNORE_NAME("grafana"),
+  IGNORE_NAME("git"),
   IGNORE_NAME("id"),
   IGNORE_NAME("lakefs"),
   IGNORE_NAME("link"),
@@ -19,5 +21,6 @@ var NOKIY_EXTERNAL_DNS_IGNORES = [
   IGNORE_NAME("rsshub"),
   IGNORE_NAME("sky"),
   IGNORE_NAME("social"),
+  IGNORE_NAME("synapse"),
   IGNORE_NAME("unspeech"),
 ];
