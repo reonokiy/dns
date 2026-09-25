@@ -4,7 +4,6 @@ var NOKIY_EXTERNAL_DNS_IGNORES = [
 
   // Hard guards for service records currently owned by external-dns.
   IGNORE_NAME("ai-gateway"),
-  IGNORE_NAME("api.internal"),
   IGNORE_NAME("arpk"),
   IGNORE_NAME("auth.synapse"),
   IGNORE_NAME("grafana"),
