@@ -1,4 +1,5 @@
 var NOKIY_INTERNAL_RECORDS = [
+  A("s1", "100.105.221.198", TTL(300), CF_PROXY_OFF),
   // DNS-only Headscale entrypoint; clients still need tailnet membership and ACL.
   A("api.internal", "100.85.64.172", TTL(300)),
   A("*.aiio.i", "100.113.0.39", TTL(300)),
