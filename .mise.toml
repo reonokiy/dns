@@ -1,4 +1,5 @@
 [tools]
+fnox = "1.48.0"
 "github:DNSControl/dnscontrol" = "4.42.0"
 
 [tasks.check]
